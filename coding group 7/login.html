@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+
+      <!-- Custom styles for this template -->
+      <link href="css/navbar-fixed-top.css" rel="stylesheet">
+      <link href="css/signin.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header" >              
+               <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-ok-circle"></span>MOKDE</a>
+               <a class="navbar-brand" href="about.html"><span >ABOUT</span></a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav">
+                  
+            </div><!--/.nav-collapse -->
+         </div>
+      </nav>
+
+      <div class="container">
+         <div class="jumbotron">
+            <div class="well" id="masterC" style="display:contents">
+               <div class="row">
+                  <div class="table-responsive">
+                     <a class="btn btn-primary" href="#btnAddKenalan" role="button"><span class="glyphicon glyphicon-plus"></a>
+                        <table id="maintable" class="table table-striped">
+                           <thead>
+                           </thead>
+                           <tbody>
+                           </tbody>
+                        </table>
+                  </div>
+               </div>
+            </div>
+            <div clas="well" id="divFrmAddKenalan" style="display:contents">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <form class="form-signin" id="frmAddKenalan">
+                        <h3 class="form-signin-heading">Enter Details</h3>
+                        <label for="inputnickName" class="sr-only">Nick Name</label>
+                        <input type="text" id="nickname" class="form-control" placeholder="eg: www.cimbclicks.com.my" required autofocus></br>
+                        <label for="inputuserName" class="sr-only">Last Name</label>
+                        <input type="text" id="username" class="form-control" placeholder="eg: username for above credential!" required></br>
+                        <label for="inputpassword" class="sr-only">Nick Name</label>
+                        <input type="password" id="password" class="form-control" placeholder="eg: password for above site authorization" required></br>
+                        
+                        <button class="btn btn-lg btn-success " type="submit">Save</button>
+                        <button class="btn btn-lg btn-success " type="reset">Reset</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--DIV display data-->
+      <div id="divDisplay" style="display: none">
+
+         <nav class="navbar navbar-default navbar-fixed-top oren">
+            <div>
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed fa fa-bars" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"></button>
+                  <button onclick="location.href=''" class="navbar-toggle kiri fa fa-arrow-left kiri"></button>
+                  <a class="navbar-brand" href="login.html"><b>Display Data</b></a>
+               </div>
+               <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav putih">
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#backup">Backup</a></li>
+                     <li><a href="#restore">Restore</a></li> 
+                  </ul>
+               </div>
+            </div>  
+         </nav>
+      
+         <!-- Table -->
+         <div class="row" id="divDisplay_table">
+            <div class="col-sm-6">
+               <div id="maintable2">
+                  
+                  
+               </div>
+
+               
+            </div>
+         </div>
+
+      <!-- EDIT BUTTON -->
+      <div id="divsavebutton">
+         <nav class="navbar navbar-fixed-bottom" id="btnEdit">
+            
+               
+         </nav>
+      </div>
+   </div>
+
+   <!--DIV Edit data-->
+   <div id="divEdit" style="display: none">
+
+      <nav class="navbar navbar-default navbar-fixed-top oren">
+         <div>
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed fa fa-bars" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"></button>
+               <button onclick="location.href=''" class="navbar-toggle kiri fa fa-arrow-left kiri"></button>
+               <a class="navbar-brand" href="login.html"><b>Edit Data</b></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav putih">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#backup">Backup</a></li>
+                  <li><a href="#restore">Restore</a></li> 
+               </ul>
+            </div>
+         </div>  
+      </nav>
+         
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/signals.min.js"></script>
+      <script src="js/hasher.min.js"></script>
+      <script src="js/crossroads.min.js"></script>
+      <script src="js/index.js"></script>
+   </body>
+</html>
